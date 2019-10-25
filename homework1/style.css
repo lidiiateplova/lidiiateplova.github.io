@@ -1,0 +1,140 @@
+.menu {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	/*Расположение кнопки по центру*/
+	transform: translate(-50%, -50%);
+}
+/*Убрать отступы точки вложенного меню*/
+.menu *{
+	list-style: none;
+}
+
+.butt {
+	/*Подключение шрифта для надписи*/
+	font-family: 'Liu Jian Mao Cao', cursive;
+	border: 3px solid #FF1493;
+	font-size: 40px;
+	color: #FF1493;
+	/*Текст без декораций*/
+	text-decoration: none;
+	text-transform: uppercase;
+	/*Зададим ширину и высоту текущего блока*/
+	width: 200px;
+	height: 60px;
+	/*Сделаем ссылку - блоком*/
+	/*Можем применять параметры ширины и высоты*/
+	display: block;
+	/*Отцентруем и сделаем отступ для надписи*/
+	text-align: center;
+	line-height: 60px;
+	/*Описание псевдоэлементов*/
+	/*псевдоэлементы относительно кнопки позиционировались*/
+	position: relative;
+}
+
+/*Задание анимированного полупрозрачного фона*/
+.butt::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: #FF1493;
+	top: 0;
+	right: 0;
+	/*Задание прозрачности фону кнопки*/
+	opacity: 0.2;
+	/*Изменение при наведении полсекунды*/
+	transition: 0.5s;
+	/*Индекс для элемента, чтобы было видно текст*/
+	/*Фон ниже по приоритетности на 1*/
+	z-index: -1;
+}
+
+/*Кнопка при наведении*/
+.butt:hover {
+	/*Текст становится белым*/
+	color: #fff;
+}
+.butt:hover::before {
+	/*Изменение параметров блока before*/
+	/*Непрозрачность 100%*/
+	opacity: 1;
+}
+
+
+/*НАСТРОЙКИ ВЛОЖЕННОГО МЕНЮ*/
+.menu ul ul{
+/*	Убрать отступы внутри выпадающего меню*/
+	margin: 0;
+	padding: 0;
+	/*Скрыть меню*/
+	display: none;
+	/*Позиция меню относительно кнопки*/
+	position: absolute;
+	top: 95%;
+	/*Ширина блока*/
+	width: 200px;
+	/*Задний фон и границы*/
+	background: #fff;
+	border: 3px solid #FF1493;
+}
+/*Чтобы при наведении на родительский список выпадало меню*/
+.menu ul li:hover ul{
+	display: block;
+}
+
+/*Рисование треугольника*/
+.menu ul ul:after,
+.menu ul ul:before{
+	/*Позиция и смещение*/
+	position: absolute;
+	bottom: 100%;
+	left: 60%;
+	border: solid transparent;
+	content: '';
+	/*Чтобы вложенное меню не скрывалось при наведении*/
+	pointer-events: auto;
+}
+/*Треугольник внутренний маленький*/
+.menu ul ul:after{
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 10px;
+	margin-left: -30px;
+}
+/*Треугольник граница*/
+.menu ul ul:before{
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: #FF1493;
+	border-width: 15px;
+	margin-left: -35px;
+}	
+
+
+/*Настройка блоков выпадающего меню*/
+.menu ul ul li {
+	/*Задание отступа строк*/
+	margin: 5px;
+	text-align: left;
+}
+/*Настройки шрифта выпадающего меню*/
+.menu ul ul li a {
+	/*Цвет фона букв*/
+	background: #fff;
+	font-size: 20px;
+	color: #FF1493;
+	/*Видимость текста 50%*/
+	opacity: 0.5;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	text-decoration: none;
+}
+/*Настройки значков*/
+.menu ul ul li a i.fa {
+	font-size: 20px;
+	color: #FF1493;
+}
+.str:hover {
+	/*При наведении видимость 100%*/
+	opacity: 1;
+}
