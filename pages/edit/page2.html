@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 2</title>
+    <script src="page2.main.js"></script>
+    <link rel="stylesheet" type="text/css" href="page2.style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<button class="buttonBack"><a href="page1.html">Back</a></button>
+<div class="tableForm">
+    <table class="table1">
+        <caption>Parameters</caption>
+        <tr>
+            <td><label>Name</label></td>
+            <td>
+                <select name="select">
+                    <option value="valueAlina">Alina</option>
+                    <option value="valueIlyya">Ilyya</option>
+                    <option value="valueLida" selected="selected">Lida</option>
+                    <option value="valueVictoria">Victoria</option>
+                    <option value="valueMaxim">Maxim</option>
+                </select>
+            </td>
+            <td><label>Size</label></td>
+            <td>
+                <select name="select">
+                    <option value="valueS">S</option>
+                    <option value="valueM">M</option>
+                    <option value="valueL">L</option>
+                </select>
+            </td>
+            <td><label>Age</label></td>
+            <td>
+                <input type="text" name="age"></input>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Favourite<br>color</label></td>
+            <td>
+                <input type="radio" name="status" id="red">
+                <span></span>
+                <label class="radioLabel" for="red">Red</label>
+                <br>
+                <input type="radio" name="status" id="green">
+                <span></span>
+                <label class="radioLabel" for="green">Green</label>
+                <br>
+                <input type="radio" name="status" id="blue">
+                <span></span>
+                <label class="radioLabel" for="blue">Blue</label>
+                <br>
+                <input type="radio" name="status" id="pink">
+                <span></span>
+                <label class="radioLabel" for="pink">Pink</label>
+                <br>
+                <input type="radio" name="status" id="yellow">
+                <span></span>
+                <label class="radioLabel" for="yellow">Yellow</label>
+                <br>
+            </td>
+            <td></td>
+            <td colspan="4">
+                <a>Write your wishes for selected person</a>
+                <input type="text" name="from" placeholder="from">
+                <textarea name="wishes" placeholder="wishes" rows="6"></textarea><br>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table2">
+        <caption>Table</caption>
+        <tr>
+            <td></td>
+            <td>NAME</td>
+            <td>AGE</td>
+            <td>SIZE</td>
+            <td>COLOR</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="Alina">
+                <label for="Alina"></label>
+            </td>
+            <td>Alina</td>
+            <td>20</td>
+            <td>M</td>
+            <td class="tdColor">Pink</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="Ilya">
+                <label for="Ilya"></label>
+            </td>
+            <td>Ilya</td>
+            <td>23</td>
+            <td>L</td>
+            <td class="tdColor">Green</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="Lida">
+                <label for="Lida"></label>
+            </td>
+            <td>Lida</td>
+            <td>21</td>
+            <td>S</td>
+            <td class="tdColor">Blue</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="Victoria">
+                <label for="Victoria"></label>
+            </td>
+            <td>Vicroria</td>
+            <td>18</td>
+            <td>S</td>
+            <td class="tdColor">Yellow</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="Maxim">
+                <label for="Maxim"></label>
+            </td>
+            <td>Maxim</td>
+            <td>25</td>
+            <td>M</td>
+            <td class="tdColor">Red</td>
+        </tr>
+    </table>
+    <button class="tableButtonC" onclick="reload()">Cancel</button>
+    <button class="tableButtonS">Save</button>
+</div>
+
+</body>
+</html>

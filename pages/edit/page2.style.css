@@ -1,0 +1,197 @@
+/*Установка шрифта*/
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: linear-gradient(to right, skyblue -50%, purple 150%);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.buttonBack {
+    position: fixed;
+    font-size: 18px;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+}
+.buttonBack:hover {
+    box-shadow: 0 0 6px 4px white;
+    transition: 0.7s;
+}
+.buttonBack:active {
+    opacity: 0;
+    transition: 0s;
+}
+.tableForm {
+    width: 600px;
+    height: 550px;
+    margin: 30px auto 30px auto;
+    /*убрала фон и бордер*/
+}
+.table1 {
+    border-collapse: collapse;
+    margin: 20px auto 10px auto;
+    font-size: 0.9em;
+    width: 600px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table1 caption {
+    padding: 6px 0 2px 10px;
+    text-align: left;
+    font-size: 20px;
+    background-color: #ac89f9;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.table1 th,
+.table1 td {
+    padding: 10px 15px;
+}
+.table1 tr {
+    background: white;
+}
+.table1 tr:last-of-type {
+    border-bottom: 4px solid #ac89f9;
+}
+.table1 textarea{
+    resize: vertical;
+}
+
+.table2 {
+    border-collapse: collapse;
+    margin: 20px auto 30px auto;
+    font-size: 0.9em;
+    width: 600px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table2 caption {
+    padding: 6px 0 2px 10px;
+    text-align: left;
+    font-size: 20px;
+    background-color: #ac89f9;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.table2 th,
+.table2 td {
+    padding: 8px 15px;
+}
+.table2 tr {
+    border-bottom: 1px solid #f2f0ff;
+}
+.table2 tr:nth-of-type(even) {
+    background-color: #f2f0ff;
+}
+.table2 tr:nth-of-type(odd) {
+    background-color: white;
+}
+.table2 tr:last-of-type {
+    border-bottom: 4px solid #ac89f9;
+}
+.table2 tr:hover {
+    background: #c0aaff;
+    color: white;
+    transition: 0.4s;
+}
+.table1 input[name="age"] {
+    width: 100px;
+    margin-right: 15px;
+}
+.table1 input[name="from"] {
+    margin-top: 5px;
+    margin-bottom: 4px;
+    padding-left: 5px;
+    width: 250px;
+}
+.table1 textarea {
+    padding-left: 5px;
+    width: 250px;
+}
+.table1 a {
+    font-size: 14px;
+}
+input[type="text"]:hover, textarea:hover, select:hover {
+    box-shadow: 0 0 6px 4px lightgrey;
+}
+input[type="text"]:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 6px 4px #c0aaff;
+}
+.tableButtonS, .tableButtonC {
+    float: right;
+    margin: 2px;
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    background: white;
+}
+.tableButtonS:hover {
+    box-shadow: 0 0 6px 4px #00cc00;
+    background: #00cc00;
+    color: white;
+    transition: 0.7s;
+}
+.tableButtonC:hover {
+    box-shadow: 0 0 6px 4px red;
+    background: red;
+    color: white;
+    transition: 0.7s;
+}
+
+.table2 input[type="checkbox"] {
+    display: none;
+}
+.table2 label::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: #d6d6d6 solid 1px;
+    border-radius: 2px;
+}
+.table2 input[type="checkbox"]:checked + label::before {
+    content: '\2714';
+    color: #876bca;
+}
+
+.table1 input[type="radio"] {
+    display: none;
+}
+.table1 label[class="radioLabel"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-right: 20px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: #d6d6d6 solid 1px;
+    background-color: white;
+}
+
+.table1 span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #876bca;
+    transform: translateY(50%) translateX(50%);
+    z-index: 1;
+    opacity: 0;
+}
+.table1 input[type="radio"]:checked + span::before{
+    opacity: 1;
+}

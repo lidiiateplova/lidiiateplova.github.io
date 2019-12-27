@@ -1,0 +1,102 @@
+/*Установка шрифта*/
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: linear-gradient(to right, skyblue -50%, purple 150%);
+}
+
+p {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+/*Оформление формы*/
+.enterPage{
+    border: rgba(25, 73, 120, 0.5) solid 2px;
+    width: 300px;
+    height: 260px;
+    padding: 30px 0 0 50px;
+    margin: 80px auto 0 auto;
+    background: white;
+    font-size: 30px;
+}
+form {
+    padding-right: 70px;
+    height: 230px;
+}
+/*Оформление ссылки*/
+a {
+    color: white;
+    text-decoration: none;
+}
+.eInput {
+    padding: 10px;
+}
+/*Оформление полей ввода логина и пароля*/
+input {
+    width: 220px;
+    height: 20px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+input:hover {
+    box-shadow: 0 0 6px 4px lightgrey;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 6px 4px #c0aaff;
+}
+.button {
+    font-size: 17px; /*увеличила шрифт*/
+    padding: 7px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+    background: rgba(28, 84, 133, 0.5);
+}
+.button:hover {
+    background: rgb(176, 141, 255); /*изменила цвет на фиолетовый*/
+    box-shadow: 0 0 6px 4px rgb(171, 135, 255); /*изменила цвет на фиолетовый*/
+    transition: 0.7s;
+}
+.button:active {
+    background: white;
+    box-shadow: none;
+    transition: 0s;
+}
+
+#errorEnterForm {
+    position: absolute;
+    padding-left: 20px;
+    height: 250px;
+    width: 200px;
+    display: none;
+    background-color: white;
+}
+#errorEnterForm a {
+    font-size: 16px;
+    color: black;
+}
+#errorEnterForm h2 {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+#cancelEnter {
+    color: white;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(28, 84, 133, 0.5);
+}
+#cancelEnter:hover {
+    background: rgb(176, 141, 255); /*изменила цвет на фиолетовый*/
+    box-shadow: 0 0 6px 4px rgb(171, 135, 255); /*изменила цвет на фиолетовый*/
+    transition: 0.7s;
+}
+
