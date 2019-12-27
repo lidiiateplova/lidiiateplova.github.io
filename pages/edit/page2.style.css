@@ -170,9 +170,7 @@ input[type="text"]:focus, textarea:focus, select:focus {
 }
 .table1 label[class="radioLabel"]::before {
     content: "";
-    display: block;
-    position: absolute;
-    margin-right: 20px;
+    display: inline-block;
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -182,7 +180,6 @@ input[type="text"]:focus, textarea:focus, select:focus {
 
 .table1 span::before {
     content: "";
-    display: block;
     position: absolute;
     width: 8px;
     height: 8px;
