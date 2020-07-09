@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Студенты</title>
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" type="text/css" href="../style/style-edit.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="info-block">
+		<div class="container">
+			
+		</div>
+	</div>
+	<div class="page-header">
+		<div class="topbar">
+			<div class="container">
+				<div class="topbar-inner">
+					<div class="topbar-left">
+						<a class="b-logo" href="/">
+							<span>
+								<p>
+									<b class="full">
+										Нижегородский Государственный
+										<br>
+										Технический Университет
+									</b>
+									<b class="abbr">НГТУ</b>
+									им. Р.Е. Алексеева
+								</p>
+							</span>
+						</a>
+					</div>
+					<div class="topbar-right">
+						<div class="topbar-serv">
+						</div>
+						<div class="topbar-info">
+							<ul class="nav">
+								<li class="dropdown">
+									<a class="dropdown-toggle">Абитуриентам</a>
+									<ul class="dropdown-menu"></ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle">Студентам</a>
+									<ul class="dropdown-menu"></ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle">Аспирантам</a>
+									<ul class="dropdown-menu"></ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle">Сотрудникам</a>
+									<ul class="dropdown-menu">
+										<li class="dir-item">
+											<a class="dir-link">Личный кабинет сотрудника</a>
+										</li>
+										<li class="dir-item">
+											<a class="dir-link" href="start_page.html">Электронный журнал куратора</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Закупки товаров и услуг</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Электронный документооборот</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Дни рождения сотрудников</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle">Выпускникам</a>
+									<ul class="dropdown-menu"></ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-inner">
+					<ul class="navbar-nav navbar-left">
+						<li class="nav-item">
+							<a class="nav-link">Университет</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Образование</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Наука</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Жизнь в НГТУ</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Сотрудничество</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Контакты</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-body">
+
+		<div class="action" align="center">
+			<input type="text" id="Name" placeholder="Фамилия">
+			<input type="text" id="Secondname" placeholder="Имя">
+			<input type="text" id="Patronymic" placeholder="Отчество">
+			<input type="text" id="Birth" placeholder="Дата рождения">
+			<input type="text" id="Phone_number" placeholder="Телефон">
+			<input type="text" id="Email" placeholder="Почта">
+			<input type="button" id="add" onclick="Add(); return false;" value="Добавить студента">
+		</div>
+
+		<input type="button" id="to-active-group" value="Перейти к активу группы" onclick="location.href='page 1 (1).html'"></input> 
+		<table class="students__table" align="center" id="table">
+			<tr class="students__header">
+				<th>№</th>
+				<th>Фамилия</th>
+				<th>Имя</th>
+				<th>Отчество</th>
+				<th>Дата рождения</th>
+				<th>Телефон</th>
+				<th>Почта</th>
+			</tr>
+			<tr class="students__row">
+				<td>Борисов</td>
+				<td>Олег</td>
+				<td>Юрьевич</td>
+				<td>20.01.1998</td>
+				<td>+79513476756</td>
+				<td>borisov.oleg@gmail.com</td>
+			</tr>
+			<tr class="students__row">
+				<td>Васильева</td>
+				<td>Анастасия</td>
+				<td>Александровна</td>
+				<td>17.01.1998</td>
+				<td>+79097675844</td>
+				<td>anastasis.vas@gmail.com</td>
+			</tr>
+			<tr class="students__row">
+				<td>Лепова</td>
+				<td>Виктория</td>
+				<td>Дмитриевна</td>
+				<td>14.09.1998</td>
+				<td>+79097864534</td>
+				<td>lepvi@gmail.com</td>
+			</tr>
+			
+		</table>
+		<!-- <iframe width="402" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=4D0571966D2D7097%2143004&authkey=%21AJSP_Eou_OAhqy0&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe> -->
+	</div>
+	<div class="page-footer">
+			<div class="footer-bottom">
+                <div class="container">
+                    <div class="copyright">
+                        © 2020 Нижегородский Государственный Технический Университет им. Р.Е. Алексеева
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script src="../table.js"></script>
+<script src="../table-edit.js"></script>
+<!-- <script src="../active-group_table-edit.js"></script> -->

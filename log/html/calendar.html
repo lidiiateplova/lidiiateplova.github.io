@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Календарь</title>
+	<link rel="stylesheet" type="text/css" href="../style/calendar-modal-style.css">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="info-block">
+		<div class="container">
+			
+		</div>
+	</div>
+	<div class="page-header">
+		<div class="topbar">
+			<div class="container">
+				<div class="topbar-inner">
+					<div class="topbar-left">
+						<a class="b-logo" href="/">
+							<span>
+								<p>
+									<b class="full">
+										Нижегородский Государственный
+										<br>
+										Технический Университет
+									</b>
+									<b class="abbr">НГТУ</b>
+									им. Р.Е. Алексеева
+								</p>
+							</span>
+						</a>
+					</div>
+					<div class="topbar-right">
+						<div class="topbar-serv">
+						</div>
+						<div class="topbar-info">
+							<ul class="nav">
+								<li class="dropdown">
+									<a class="dropdown-toggle">Абитуриентам</a>
+									<ul class="dropdown-menu"></ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle">Студентам</a>
+									<ul class="dropdown-menu"></ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle">Аспирантам</a>
+									<ul class="dropdown-menu"></ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle">Сотрудникам</a>
+									<ul class="dropdown-menu">
+										<li class="dir-item">
+											<a class="dir-link">Личный кабинет сотрудника</a>
+										</li>
+										<li class="dir-item">
+											<a class="dir-link" href="start_page.html">Электронный журнал куратора</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Закупки товаров и услуг</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Электронный документооборот</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Дни рождения сотрудников</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle">Выпускникам</a>
+									<ul class="dropdown-menu"></ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-inner">
+					<ul class="navbar-nav navbar-left">
+						<li class="nav-item">
+							<a class="nav-link">Университет</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Образование</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Наука</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Жизнь в НГТУ</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Сотрудничество</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link">Контакты</a>
+							<div class="nav-dropdown">
+								<div class="row">
+									<div class="col-md-3">
+										
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-body">
+
+
+<style>
+
+#calendar2 {
+  border-collapse: collapse;
+  width: 90%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+
+#calendar2 thead tr:last-child {
+    font-size: small;
+    color: rgb(85, 85, 85);
+    border-bottom: 1px solid #ddd;
+}
+
+#calendar2 thead tr:last-child td {
+    height: 40px;
+    padding-top: 8px;
+    font-size: 16px;
+}
+
+#calendar2 thead tr:nth-child(1) td {
+	background: #0072BC;
+	color: #fff;
+	font-size: 30px;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  	font-size: 26px;
+    color: #fff;
+    padding: 70px 10px;
+    text-align: center;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, 
+#calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+
+#calendar2 tbody td {
+    color: rgb(44, 86, 122);
+    width: 14%;
+    height: 50px;
+    vertical-align: middle;
+    padding-top: 4px;
+    font-size: 16px;
+}
+
+#calendar2 tbody td:hover {
+    color: #fff !important;
+    background: #99CCFF;
+    cursor: pointer;
+}
+
+#calendar2 tbody td.empt:hover {
+    background: #fff;
+    cursor: default;
+}
+
+
+#calendar2 tbody td:nth-child(n+7), 
+#calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+
+#calendar2 tbody td.today {
+  background: #0072BC;
+  color: #fff;
+}
+
+</style>
+
+
+
+<div id="modal-window" class="modal">
+	<button class="modal1">Push meeeeee!</button>
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<p>Modal window</p>
+	</div>
+</div>
+
+<table id="calendar2" align="center">
+  <thead>
+    <tr><td>‹<td colspan="5"><td>›
+    <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+  <tbody>
+</table>
+
+
+<script>
+
+function Calendar2(id, year, month) {
+var Dlast = new Date(year,month+1,0).getDate(),
+    D = new Date(year,month,Dlast),
+    DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+    DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+    calendar = '<tr>',
+    month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+if (DNfirst != 0) {
+  for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
+}else{
+  for(var  i = 0; i < 6; i++) calendar += '<td>';
+}
+for(var  i = 1; i <= Dlast; i++) {
+  if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+    calendar += '<td class="day today">'+ i;
+    calendar += '<div id="day">';
+  }else{
+    calendar += '<td class="day">' + i;
+    calendar += '<div id="day">';
+  }
+  if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
+    calendar += '<tr>';
+  }
+}
+for(var  i = DNlast; i < 7; i++) calendar += '<td class="empt">&nbsp;';
+document.querySelector('#'+id+' tbody').innerHTML = calendar;
+document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
+document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
+document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
+if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+    document.querySelector('#'+id+' tbody').innerHTML += '<tr><td class="empt">&nbsp;<td class="empt">&nbsp;<td class="empt">&nbsp;<td class="empt">&nbsp;<td class="empt">&nbsp;<td class="empt">&nbsp;<td class="empt">&nbsp;';
+}
+}
+Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+
+// переключатель минус месяц
+document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+}
+
+// переключатель плюс месяц
+document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+}
+
+</script>
+
+</body>
+
+<script src="../table.js"></script>
+<script src="../calendar-modal.js"></script>
